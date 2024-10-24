@@ -58,17 +58,17 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 1. Clone o repositório.
 2. Instale as dependências:
    ```
-   npm install ```
+   npm install
 
 3. Execute
    ```
-   serverless offline ```
+   serverless offline
 
 ## Opcional
 
 1. Execute o deploy 
    ``` 
-   serverless deploy ```
+   serverless deploy
 
 ## Uso da API
 
