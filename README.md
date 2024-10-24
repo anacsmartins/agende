@@ -10,15 +10,14 @@ A combinação desses frameworks oferece agilidade no desenvolvimento, com um co
 
 A API Agente é uma aplicação construída em NestJS e projetada para gerenciar agendas médicas, com funcionalidades que incluem listagem de médicos e seus horários disponíveis, além do agendamento de consultas. A API foi desenvolvida seguindo boas práticas REST, utilizando AWS Lambda para execução serverless, TypeScript, e incluindo testes unitários e end-to-end (E2E).
 
-##### Estrutura do Projeto
+## Estrutura do Projeto
 
 A estrutura do projeto segue o padrão de módulos do NestJS, organizando controladores, serviços e DTOs em pastas específicas. A API tem duas principais funcionalidades:
 
-    Listagem de Agendas: Retorna médicos e horários disponíveis para consulta.
-    Agendamento de Consultas: Realiza o agendamento de uma consulta para o paciente.
+   Listagem de Agendas: Retorna médicos e horários disponíveis para consulta.
+   Agendamento de Consultas: Realiza o agendamento de uma consulta para o paciente.
 
-    ```bash
-
+    ```
       ├── src
       │   ├── agendamento
       │   │   ├── controller
@@ -58,13 +57,12 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 
 1. Clone o repositório.
 2. Instale as dependências:
-   ```bash
+   ```
       npm install
-   ```
+
 3. Execute
-   ```bash
-      serverless offline
    ```
+      serverless offline
 
 ## Opcional
 1. Execute o deploy 
@@ -75,11 +73,11 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 
 A Agende API possui os seguintes endpoints disponíveis:
 
-    GET /agendas
+      GET /agendas
         Retorna uma lista de médicos e seus horários disponíveis.
         Exemplo de resposta:
 
-        json
+   ```json
 
     {
       "medicos": [
@@ -97,7 +95,7 @@ A Agende API possui os seguintes endpoints disponíveis:
       Cria um novo agendamento de consulta.
       Corpo da requisição:
 
-      json
+   ```json
 
    {
    "medicoId": 1,
@@ -107,7 +105,7 @@ A Agende API possui os seguintes endpoints disponíveis:
 
 Exemplo de resposta:
 
-      json
+   ```json
 
         {
           "mensagem": "Agendamento realizado com sucesso",
@@ -123,5 +121,6 @@ Exemplo de resposta:
 O projeto foi desenvolvido com suporte a testes unitários e E2E usando o Jest e Supertest.
 
     Testes Unitários: Os testes unitários estão localizados na pasta test e cobrem as funcionalidades dos serviços e controladores. Para rodar os testes:
-     ```bash
+   
+   ```
     npm run test
