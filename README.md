@@ -63,7 +63,8 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 
 ## Opcional
 1. Execute o deploy 
-  ```serverless deploy
+  ```bash
+   serverless deploy
 
 ## Uso da API
 
@@ -86,18 +87,18 @@ A Agende API possui os seguintes endpoints disponíveis:
       ]
     }
 
-POST /agendamento
+   POST /agendamento
 
-    Cria um novo agendamento de consulta.
-    Corpo da requisição:
+      Cria um novo agendamento de consulta.
+      Corpo da requisição:
 
-    json
+      json
 
-{
-  "medicoId": 1,
-  "horario": "2024-10-05 09:00",
-  "paciente": "Maria Oliveira"
-}
+   {
+   "medicoId": 1,
+   "horario": "2024-10-05 09:00",
+   "paciente": "Maria Oliveira"
+   }
 
 Exemplo de resposta:
 
@@ -117,5 +118,5 @@ Exemplo de resposta:
 O projeto foi desenvolvido com suporte a testes unitários e E2E usando o Jest e Supertest.
 
     Testes Unitários: Os testes unitários estão localizados na pasta test e cobrem as funcionalidades dos serviços e controladores. Para rodar os testes:
-
-    ```npm run test
+     ```bash
+    npm run test
