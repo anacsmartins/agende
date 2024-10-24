@@ -17,34 +17,36 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
     Listagem de Agendas: Retorna médicos e horários disponíveis para consulta.
     Agendamento de Consultas: Realiza o agendamento de uma consulta para o paciente.
 
-   ├── src
-   │   ├── agendamento
-   │   │   ├── controller
-   │   │   │   └── agendamento.controller.ts
-   │   │   ├── dto
-   │   │   │   └── create-agendamento.dto.ts
-   │   │   ├── service
-   │   │   │   └── agendamento.service.ts
-   │   │   └── mocks
-   │   │       └── medicos.mock.ts
-   │   ├── agendas
-   │   │   ├── controller
-   │   │   │   └── agendas.controller.ts
-   │   │   ├── service
-   │   │   │   └── agendas.service.ts
-   │   ├── app.module.ts
-   │   └── main.ts
-   ├── test
-   │   ├── agendamento.e2e.test.ts
-   │   ├── agendas.e2e.test.ts
-   │   ├── agendamento.service.spec.ts
-   │   ├── agendas.service.spec.ts
-   ├── jest.config.ts
-   ├── package.json
-   ├── serverless.yml
-   ├── tsconfig.json
-   └── README.md
+    ```bash
 
+      ├── src
+      │   ├── agendamento
+      │   │   ├── controller
+      │   │   │   └── agendamento.controller.ts
+      │   │   ├── dto
+      │   │   │   └── create-agendamento.dto.ts
+      │   │   ├── service
+      │   │   │   └── agendamento.service.ts
+      │   │   └── mocks
+      │   │       └── medicos.mock.ts
+      │   ├── agendas
+      │   │   ├── controller
+      │   │   │   └── agendas.controller.ts
+      │   │   ├── service
+      │   │   │   └── agendas.service.ts
+      │   ├── app.module.ts
+      │   └── main.ts
+      ├── test
+      │   ├── agendamento.e2e.test.ts
+      │   ├── agendas.e2e.test.ts
+      │   ├── agendamento.service.spec.ts
+      │   ├── agendas.service.spec.ts
+      ├── jest.config.ts
+      ├── package.json
+      ├── serverless.yml
+      ├── tsconfig.json
+      └── README.md
+   ```
 
 ## Pré-requisitos
 
@@ -57,9 +59,12 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 1. Clone o repositório.
 2. Instale as dependências:
    ```bash
-   npm install
+      npm install
+   ```
 3. Execute
-   ```serverless offline
+   ```bash
+      serverless offline
+   ```
 
 ## Opcional
 1. Execute o deploy 
