@@ -63,13 +63,11 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 3. Execute
    ```
    serverless offline
-
 ## Opcional
 
 1. Execute o deploy 
    ``` 
    serverless deploy
-
 ## Uso da API
 
 A Agende API possui os seguintes endpoints disponíveis:
@@ -79,30 +77,27 @@ A Agende API possui os seguintes endpoints disponíveis:
         Exemplo de resposta:
 
    ```json
-
-    {
-      "medicos": [
-        {
-          "id": 1,
-          "nome": "Dr. João Silva",
-          "especialidade": "Cardiologista",
-          "horarios_disponiveis": ["2024-10-05 09:00", "2024-10-05 10:00"]
-        }
+   {
+   "medicos": [
+         {
+            "id": 1,
+            "nome": "Dr. João Silva",
+            "especialidade": "Cardiologista",
+            "horarios_disponiveis": ["2024-10-05 09:00", "2024-10-05 10:00"]
+         }
       ]
-    }
+   }
 ```
    POST /agendamento
    Cria um novo agendamento de consulta.
    Corpo da requisição:
 
    ```json
-
    {
       "medicoId": 1,
       "horario": "2024-10-05 09:00",
       "paciente": "Maria Oliveira"
    }
-
 ```
 
 Exemplo de resposta:
