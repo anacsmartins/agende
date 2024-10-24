@@ -57,18 +57,15 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 
 1. Clone o repositório.
 2. Instale as dependências:
-   ```npm install
-   ```
+   ```npm install ```
 
 3. Execute
-   ```serverless offline
+   ```serverless offline ```
 
 ## Opcional
 
 1. Execute o deploy 
-  ```
-      serverless deploy
-   ```
+   ``` serverless deploy ```
 ## Uso da API
 
 A Agende API possui os seguintes endpoints disponíveis:
@@ -118,9 +115,9 @@ Exemplo de resposta:
 ```
 ## Testes
 
-O projeto foi desenvolvido com suporte a testes unitários e E2E usando o Jest e Supertest.
-
-    Testes Unitários: Os testes unitários estão localizados na pasta test e cobrem as funcionalidades dos serviços e controladores. Para rodar os testes:
+   O projeto foi desenvolvido com suporte a testes unitários e E2E usando o Jest e Supertest. Os testes unitários estão localizados na pasta test e cobrem as funcionalidades dos serviços e controladores. Para rodar os testes:
    
    ```
     npm run test
+   ```
+
