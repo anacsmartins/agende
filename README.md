@@ -1,4 +1,4 @@
-# NestJS Serverless API
+# Agende API
 
 Esta API foi construída utilizando NestJS e implementada no AWS Lambda com o Serverless Framework. Abaixo estão as instruções para rodar o projeto localmente e realizar o deploy.
 
