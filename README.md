@@ -57,18 +57,18 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
 
 1. Clone o repositório.
 2. Instale as dependências:
+   ```npm install
    ```
-      npm install
 
 3. Execute
-   ```
-      serverless offline
+   ```serverless offline
 
 ## Opcional
-1. Execute o deploy 
-  ```bash
-   serverless deploy
 
+1. Execute o deploy 
+  ```
+      serverless deploy
+   ```
 ## Uso da API
 
 A Agende API possui os seguintes endpoints disponíveis:
@@ -89,7 +89,7 @@ A Agende API possui os seguintes endpoints disponíveis:
         }
       ]
     }
-
+```
    POST /agendamento
 
       Cria um novo agendamento de consulta.
@@ -102,7 +102,7 @@ A Agende API possui os seguintes endpoints disponíveis:
    "horario": "2024-10-05 09:00",
    "paciente": "Maria Oliveira"
    }
-
+```
 Exemplo de resposta:
 
    ```json
@@ -115,7 +115,7 @@ Exemplo de resposta:
             "paciente": "Maria Oliveira"
           }
         }
-
+```
 ## Testes
 
 O projeto foi desenvolvido com suporte a testes unitários e E2E usando o Jest e Supertest.
