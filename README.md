@@ -17,7 +17,7 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
    Listagem de Agendas: Retorna médicos e horários disponíveis para consulta.
    Agendamento de Consultas: Realiza o agendamento de uma consulta para o paciente.
 
-    ```
+   
       ├── src
       │   ├── agendamento
       │   │   ├── controller
@@ -45,7 +45,7 @@ A estrutura do projeto segue o padrão de módulos do NestJS, organizando contro
       ├── serverless.yml
       ├── tsconfig.json
       └── README.md
-   ```
+
 
 ## Pré-requisitos
 
